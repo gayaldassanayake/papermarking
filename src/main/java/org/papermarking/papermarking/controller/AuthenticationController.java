@@ -38,6 +38,11 @@ public class AuthenticationController {
         return authenticationService.findByEmail(email);
     }
 
+    @GetMapping(value = "/byAccessLevel/{accessLevel}")
+    public List<Authentication> findAllByAccessLevel(@PathVariable("accessLevel") int accessLevel) {
+        return authenticationService.findAllByAccessLevel(accessLevel);
+    }
+
 
     @PostMapping(value = "/save")
     public ResponseEntity<?> saveOrUpdateStudent(@RequestBody Authentication student) {

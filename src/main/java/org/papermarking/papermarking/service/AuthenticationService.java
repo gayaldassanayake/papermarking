@@ -9,6 +9,8 @@ public interface AuthenticationService {
 
     List<Authentication> findAll();
 
+    List<Authentication> findAllByAccessLevel(int accessLevel);
+
     Authentication findByEmailAndPassword(String email , String password);
 
     Authentication findByEmail(String email);

@@ -21,6 +21,11 @@ public class AuthenticationServiceImpl implements AuthenticationService {
     }
 
     @Override
+    public List<Authentication> findAllByAccessLevel(int accessLevel) {
+        return authenticationRepository.findAllByAccessLevel(accessLevel);
+    }
+
+    @Override
     public Authentication findByEmailAndPassword(String email, String password) {
         return authenticationRepository.findByEmailAndPassword(email, password);
     }
