@@ -17,9 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/students")
-public class controller {
-
-
+public class controllerTest {
     @GetMapping(value = "/")
     public String getAllStudents() {
         return "paper Marking Resullt";
