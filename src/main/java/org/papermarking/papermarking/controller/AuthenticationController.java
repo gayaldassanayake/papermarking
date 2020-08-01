@@ -45,8 +45,8 @@ public class AuthenticationController {
 
 
     @PostMapping(value = "/save")
-    public ResponseEntity<?> saveOrUpdateStudent(@RequestBody Authentication student) {
-        authenticationService.saveOrUpdateStudent(student);
+    public ResponseEntity<?> saveOrUpdateStudent(@RequestBody Authentication authUser) {
+        authenticationService.saveOrUpdateStudent(authUser);
         return new ResponseEntity("auth user added successfully", HttpStatus.OK);
     }
 
