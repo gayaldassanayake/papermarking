@@ -2,7 +2,7 @@ package org.papermarking.papermarking.repository;
 
 
 
-import org.papermarking.papermarking.model.Authentication;
+import org.papermarking.papermarking.model.userModel.Authentication;
 import org.springframework.data.mongodb.repository.MongoRepository;
 
 import java.util.List;

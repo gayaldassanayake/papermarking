@@ -2,7 +2,7 @@ package org.papermarking.papermarking.service.impl;
 
 import java.util.List;
 
-import org.papermarking.papermarking.model.Authentication;
+import org.papermarking.papermarking.model.userModel.Authentication;
 import org.papermarking.papermarking.repository.AuthenticationRepository;
 import org.papermarking.papermarking.service.AuthenticationService;
 import org.springframework.beans.factory.annotation.Autowired;

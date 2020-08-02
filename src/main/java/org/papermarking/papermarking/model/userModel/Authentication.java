@@ -1,4 +1,4 @@
-package org.papermarking.papermarking.model;
+package org.papermarking.papermarking.model.userModel;
 
 
 import java.util.List;

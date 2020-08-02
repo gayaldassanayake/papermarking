@@ -1,6 +1,6 @@
 package org.papermarking.papermarking.service;
 
-import org.papermarking.papermarking.model.Authentication;
+import org.papermarking.papermarking.model.userModel.Authentication;
 
 import java.util.List;
 
