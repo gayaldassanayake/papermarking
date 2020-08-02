@@ -22,7 +22,7 @@ public class controller {
 
     @GetMapping(value = "/")
     public String getAllStudents() {
-        return "paper Marking Resullt";
+        return "paper Marking Result";
     }
 
 
