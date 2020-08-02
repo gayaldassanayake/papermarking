@@ -36,6 +36,12 @@ public class UserController {
         return userService.findAll();
     }
 
+    @GetMapping(value = "/authId/{id}")
+    public List<User> getAllUsersByAuthId(@PathVariable("id") String id) {
+        System.out.println("This is  -  "+id);
+        return userService.findByAuthenticationId(id);
+    }
+
 
 //    @GetMapping(value = "/byEmail/{email}")
 //    public User getUserByEmail(@PathVariable("email") String email) {

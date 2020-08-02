@@ -21,6 +21,11 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
+    public List<User> findByAuthenticationId(String id) {
+        return userRepository.findByAuthenticationId(id);
+    }
+
+    @Override
     public List<User> findAll() {
         return userRepository.findAll();
     }

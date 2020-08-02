@@ -9,6 +9,8 @@ public interface UserService {
 
     User findByAuthenticationEmail(String email);
 
+    List<User> findByAuthenticationId(String id);
+
     List<User> findAll();
 
 //    User findByEmail(String email);
