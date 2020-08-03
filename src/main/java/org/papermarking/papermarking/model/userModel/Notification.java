@@ -18,14 +18,13 @@ public class Notification {
 
     @DBRef(lazy = true)
     private User sender;
-    
+
     private String topic;
     private String content;
     private Date date;
 
     @PersistenceConstructor
-    public Notification(String id, User receiver, User sender, String topic, String content, Date date) {
-        this.id = id;
+    public Notification(User receiver, User sender, String topic, String content, Date date) {
         this.receiver = receiver;
         this.sender = sender;
         this.topic = topic;

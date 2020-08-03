@@ -23,7 +23,7 @@ public class User {
     /*
     payment method and profile pic
     * */
-    private List<String> Subjects;
+    private List<String> subjects;
 
     @PersistenceConstructor
     public User(String id, String email, String name, int telephone, int type, int state, Date createdAt, Date updatedAt, Date lastLoggedAt, List<String> subjects) {
@@ -36,7 +36,7 @@ public class User {
         this.createdAt = createdAt;
         this.updatedAt = updatedAt;
         this.lastLoggedAt = lastLoggedAt;
-        Subjects = subjects;
+        this.subjects = subjects;
     }
 
     public String getId() {
@@ -112,11 +112,11 @@ public class User {
     }
 
     public List<String> getSubjects() {
-        return Subjects;
+        return this.subjects;
     }
 
     public void setSubjects(List<String> subjects) {
-        Subjects = subjects;
+        this.subjects = subjects;
     }
 }
 

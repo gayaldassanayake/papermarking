@@ -1,4 +1,4 @@
-package org.papermarking.papermarking;
+package org.papermarking.papermarking.test;
 
 
 import java.util.List;
@@ -16,11 +16,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 
 @RestController
-@RequestMapping("/students")
+@RequestMapping("/test")
 public class controllerTest {
     @GetMapping(value = "/")
-    public String getAllStudents() {
-        return "paper Marking Resullt";
+    public void getAllStudents() {
+        UserModeltest.userObjectTest();
     }
 
 
