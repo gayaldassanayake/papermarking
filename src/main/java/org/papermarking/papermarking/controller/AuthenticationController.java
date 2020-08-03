@@ -3,7 +3,7 @@ package org.papermarking.papermarking.controller;
 import java.util.List;
 
 import org.papermarking.papermarking.model.userModel.Authentication;
-import org.papermarking.papermarking.service.AuthenticationService;
+import org.papermarking.papermarking.service.UserServices.AuthenticationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
