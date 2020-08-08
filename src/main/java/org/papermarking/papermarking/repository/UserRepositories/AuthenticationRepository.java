@@ -1,4 +1,4 @@
-package org.papermarking.papermarking.repository;
+package org.papermarking.papermarking.repository.UserRepositories;
 
 
 

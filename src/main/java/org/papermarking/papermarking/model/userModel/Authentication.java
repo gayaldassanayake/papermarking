@@ -4,6 +4,7 @@ package org.papermarking.papermarking.model.userModel;
 import java.util.List;
 
 import org.springframework.data.annotation.Id;
+import org.springframework.data.annotation.PersistenceConstructor;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document(collection = "authentication")
@@ -18,6 +19,7 @@ public class Authentication {
      * @param email
      * @param password
      */
+    @PersistenceConstructor
     public Authentication(String email, String password, int accessLevel) {
         super();
         this.accessLevel = accessLevel;
