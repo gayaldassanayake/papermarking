@@ -1,10 +1,10 @@
-package org.papermarking.papermarking.service.impl.FileServiceImpl;
+package org.papermarking.papermarking.service.impl.fileServiceImpl;
 
 import com.mongodb.BasicDBObject;
 import com.mongodb.DBObject;
 import org.bson.types.ObjectId;
 import org.papermarking.papermarking.model.fileModel.File;
-import org.papermarking.papermarking.service.FileServices.FileService;
+import org.papermarking.papermarking.service.fileServices.FileService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
@@ -39,6 +39,8 @@ public class FileServiceImpl implements FileService {
     public File getFile(String id) throws IllegalStateException, IOException,NullPointerException {
         com.mongodb.client.gridfs.model.GridFSFile file = gridFsTemplate.findOne(new Query(Criteria.where("_id").is(id)));
         File fileObject = new File();
+        assert file != null;
+        assert file.getMetadata() != null;
         fileObject.setTitle(file.getMetadata().get("title").toString());
         fileObject.setDescription(file.getMetadata().get("description").toString());
         fileObject.setCreatedAt(file.getMetadata().get("createdAt").toString());

@@ -1,4 +1,4 @@
-package org.papermarking.papermarking.service.UserServices;
+package org.papermarking.papermarking.service.userServices;
 
 import org.papermarking.papermarking.model.userModel.Authentication;
 

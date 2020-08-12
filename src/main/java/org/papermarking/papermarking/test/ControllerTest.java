@@ -2,14 +2,11 @@ package org.papermarking.papermarking.test;
 
 
 import java.io.IOException;
-import java.util.List;
 
 import org.papermarking.papermarking.model.fileModel.File;
 
-import org.papermarking.papermarking.service.impl.FileServiceImpl.FileServiceImpl;
+import org.papermarking.papermarking.service.impl.fileServiceImpl.FileServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.ui.Model;
 import org.springframework.util.FileCopyUtils;
 import org.springframework.web.bind.annotation.*;
@@ -20,7 +17,7 @@ import javax.servlet.http.HttpServletResponse;
 
 @RestController
 @RequestMapping("/test")
-public class controllerTest {
+public class ControllerTest {
 
     public String type = "pdf";
 
@@ -60,7 +57,7 @@ public class controllerTest {
     @GetMapping(value = "/")
     public void getAllStudents() {
         System.out.println(java.time.LocalDate.now().toString());
-        UserModeltest.userObjectTest();
+        UserModelTest.userObjectTest();
     }
 
 

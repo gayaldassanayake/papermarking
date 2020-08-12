@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-public class UserModeltest {
+public class UserModelTest {
 
     public static void userObjectTest(){
         User user= new User(null , "email" , "name" , 1 , 2, 3,new Date() , new Date() , new Date() ,new ArrayList<>());

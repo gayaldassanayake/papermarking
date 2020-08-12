@@ -1,10 +1,10 @@
-package org.papermarking.papermarking.service.impl.UserServiceImpl;
+package org.papermarking.papermarking.service.impl.userServiceImpl;
 
 import java.util.List;
 
 import org.papermarking.papermarking.model.userModel.Authentication;
-import org.papermarking.papermarking.repository.UserRepositories.AuthenticationRepository;
-import org.papermarking.papermarking.service.UserServices.AuthenticationService;
+import org.papermarking.papermarking.repository.userRepositories.AuthenticationRepository;
+import org.papermarking.papermarking.service.userServices.AuthenticationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

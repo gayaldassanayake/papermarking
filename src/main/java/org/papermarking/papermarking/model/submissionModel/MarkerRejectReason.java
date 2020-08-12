@@ -9,7 +9,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 import java.util.Date;
 
 @Document(collection = "markerRejectReason")
-public class markerRejectReason {
+public class MarkerRejectReason {
 
     @Id
     private String id;
@@ -25,7 +25,7 @@ public class markerRejectReason {
 
     @PersistenceConstructor
 
-    public markerRejectReason(Submission submission, PaperMarker paperMarker, String reason, Date date) {
+    public MarkerRejectReason(Submission submission, PaperMarker paperMarker, String reason, Date date) {
         this.submission = submission;
         this.paperMarker = paperMarker;
         this.reason = reason;

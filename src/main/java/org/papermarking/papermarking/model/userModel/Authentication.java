@@ -15,9 +15,9 @@ public class Authentication {
     private String password;
     private int accessLevel;
     /**
-     * @param accessLevel
-     * @param email
-     * @param password
+     * @param accessLevel access level of the user
+     * @param email email of the user
+     * @param password password of the user
      */
     @PersistenceConstructor
     public Authentication(String email, String password, int accessLevel) {

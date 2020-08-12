@@ -1,4 +1,4 @@
-package org.papermarking.papermarking.service.FileServices;
+package org.papermarking.papermarking.service.fileServices;
 
 import org.papermarking.papermarking.model.fileModel.File;
 import org.springframework.web.multipart.MultipartFile;
